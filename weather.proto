@@ -9,7 +9,7 @@ message CurrentWeatherRequest {
 }
 
 @BufCode{"start":"CurrentWeatherResponse"}
-message CurrentWeatherResponseInaBranch {
+message CurrentWeatherResponseInMain {
   float temperature = 1;
   string detail = 2;
 }
