@@ -1,0 +1,21 @@
+protobuf title="proto/weather/weather.proto"
+    syntax = "proto3";
+
+package ac_me.weather;
+
+import "location/location.proto";
+
+message CurrentWeatherRequest {
+  location.Location location = 1;
+}
+
+@BufCode{"start":"CurrentWeatherResponse"}
+message CurrentWeatherResponse {
+  float temperature = 1;
+  string detail = 2;
+}
+@BufCode{"end":"CurrentWeatherResponse"}
+
+service WeatherVisionService {
+  rpc CurrentWeather(CurrentWeatherRequest) returns (CurrentWeatherResponse);
+}
