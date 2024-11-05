@@ -1,7 +1,6 @@
-protobuf title="proto/weather/weather.proto"
-    syntax = "proto3";
+syntax = "proto3";
 
-package ac_me.weather;
+package acme.weather;
 
 import "location/location.proto";
 
@@ -17,5 +16,5 @@ message CurrentWeatherResponse {
 @BufCode{"end":"CurrentWeatherResponse"}
 
 service WeatherVisionService {
-  rpc CurrentWeather(CurrentWeatherRequest) returns (CurrentWeatherResponse);
+	rpc CurrentWeather(CurrentWeatherRequest) returns (CurrentWeatherResponse);
 }
