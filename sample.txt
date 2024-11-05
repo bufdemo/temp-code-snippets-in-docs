@@ -1,0 +1,8 @@
+leading sample content
+
+-- @BufCode{"start":"block-one"} --
+block one content
+stuff @BufCode{"start":"block-two"} other stuff
+block two content, nested in block one
+invent your own @BufCode{"end":"block-one"} comment delimiters
+doesn't @BufCode{"end":"block-two"} matter
