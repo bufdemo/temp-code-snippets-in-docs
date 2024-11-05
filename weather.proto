@@ -8,12 +8,12 @@ message CurrentWeatherRequest {
   location.Location location = 1;
 }
 
-@BufCode{"start":"CurrentWeatherResponse"}
+@BufCode{"start":"CurrentWeatherResponse Message"}
 message CurrentWeatherResponseInMain {
   float temperature = 1;
   string detail = 2;
 }
-@BufCode{"end":"CurrentWeatherResponse"}
+@BufCode{"end":"CurrentWeatherResponse Message"}
 
 service WeatherVisionService {
 	rpc CurrentWeather(CurrentWeatherRequest) returns (CurrentWeatherResponse);
